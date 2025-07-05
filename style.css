@@ -1,5 +1,5 @@
 body {
-  background-color: #f9fafb; /* cinza clarinho */
+  background-color: #F5F5F5; /* cinza clarinho */
   color: #111827;
   font-family: ui-sans-serif, system-ui, sans-serif;
 }
@@ -8,10 +8,12 @@ body {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #374151;
 }
 
 header {
-  background: #f9fafb;
+  background: #F5F5F5;
   padding: 20px 0;
 }
 
@@ -60,18 +62,13 @@ footer {
 
 .social a {
   margin: 0 10px;
-  text-decoration: none;
   color: #555;
-}
-
-.social a:hover {
-  text-decoration: underline;
 }
 
 .back-button{
     margin-left: 50px;
     text-decoration: none;
-    /* ajeita essa bosta*/
+    color: #0a0a0a;
 }
 
 .title {
@@ -79,9 +76,6 @@ footer {
   color: #0a0a0a;        
 }
 
-.title:hover {
-  text-decoration: underline;
-}
 
 .date {
   --tw-text-opacity: 1;
@@ -89,11 +83,9 @@ footer {
 }
 
 .blog-article {
-  max-width: 700px;
-  margin: 80px auto;
-  padding: 0 20px;
-  font-family: 'Segoe UI', sans-serif;
-  color: #222;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
   line-height: 1.8;
   font-size: 1.05rem;
 }
@@ -108,7 +100,6 @@ footer {
 }
 
 .texto-artigo {
-  margin-bottom: 20px;
   text-align: justify;
   color: #374151;
 }
