@@ -103,3 +103,8 @@ footer {
   text-align: justify;
   color: #374151;
 }
+
+.link-blog::before{
+  content: "•";
+  margin-right: 6px;
+}
