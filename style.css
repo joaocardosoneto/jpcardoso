@@ -7,7 +7,6 @@ body {
 .container {
   max-width: 800px;
   margin: 0 auto;
-  padding: 20px;
   font-family: 'Segoe UI', sans-serif;
   color: #374151;
 }
@@ -55,7 +54,6 @@ nav a {
 footer {
   border-top: 1px solid #eee;
   margin-top: 450px;
-  padding: 20px;
   text-align: center;
   font-size: 0.9rem;
 }
@@ -102,9 +100,4 @@ footer {
 .texto-artigo {
   text-align: justify;
   color: #374151;
-}
-
-.link-blog::before{
-  content: "•";
-  margin-right: 6px;
 }
