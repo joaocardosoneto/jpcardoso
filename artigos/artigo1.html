@@ -10,10 +10,39 @@
   <a href="../index.html" class="back-button">←</a>
 
   <article class ="blog-article"> 
-    <h2 class="titulo-artigo"> Como aprender IA do zero</h2>
+    <h2 class="titulo-artigo"> Tokenização</h2>
+    <p class="texto-artigo"> 
+      Da mesma forma que nós seres humanos, lemos e compreendemos palavras para interpretar um texto, com modelos
+      de linguagem não seria diferente, eles também precisam de uma forma de "ler" o que escrevemos. A diferença
+      está na forma de como isso é feito, em vez de palavras esses modelos usam "tokens".
     <p class="texto-artigo">
-      Neste artigo, vamos explorar o caminho para aprender inteligência artificial começando do zero...
-    </p>
-  </article>
+      E para falar sobre Tokenização utilizarei como referência os modelos da OpenAI. <p>
+    <p class="texto-artigo">
+      Como dito anteriormente os modelos não leem textos como nos humanos, em vez disso eles leem em blocos chamados "token".
+      Token é a unidade básica de um modelo de linguagem. Ele pode ser uma palavra, parte de uma palavra, espaço ou símbolo.</p>
+    <p class="texto-artigo"> 
+      Para melhor entendimento, a frase "Não irei a academia" é quebrada em 5 tokens:</p>
+    <img src="img_tokenizacao.png" alt="Tokenização feita no site da OpenAi" />
+    <p class="texto-artigo">
+      Esse processo de quebrar o texto em tokens é chamado de Tokenização. </p>
+    <p class="texto-artigo"> 
+      Para o GPT-4, um token geralmente corresponde a cerca de 4 caracteres de texto em inglês comum, isso é
+      aproximadamente 3/4 de uma palavra (ou seja, 100 tokens ≈ 75 palavras).
+    <p class="texto-artigo"> 
+      Os modelos possuem limites de tokens, no GPT-4 por exemplo o limite é de 8192 tokens, então se você mandar um texto com
+      5000 tokens como prompt ele poderá gerar como resposta até 3192 tokens. </p>
+    <p class="texto-artigo"> 
+      Um ponto em que eu sempre tive dúvida foi porque não usar palavras para separação em vez de tokens, no livro 
+      IA Engineer da Chip Huyen ela trás 3 motivos principais: </p>
+    <p class="texto-artigo"> 
+      1. Comparado as palavras, os tokens permitem que o modelo divida palavras em componentes significativos.
+      Por exemplo "cooking" pode ser divido em "cook" e "ing", com ambos carregando algum significado da palavra original. </p>
+    <p class="texto-artigo"> 
+      2. Como há menos tokens exclusivos do que palavras exclusivas, isso reduz o tamanho do vocabulário do modelo,
+      tornando-o mais eficiente. </p>
+    <p class="texto-artigo"> 
+      3. Tokens também ajudam o modelo a processar palavras desconhecidas. Por exemplo uma palavra inventada como
+      "chatgpting" pode ser divida em "chatgpt" e "ing", ajudando o modelo a entender sua estrutura. 
+    </article>
 </body>
 </html>
