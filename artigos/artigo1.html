@@ -21,8 +21,10 @@
       Como dito anteriormente os modelos não leem textos como nos humanos, em vez disso eles leem em blocos chamados "token".
       Token é a unidade básica de um modelo de linguagem. Ele pode ser uma palavra, parte de uma palavra, espaço ou símbolo.</p>
     <p class="texto-artigo"> 
-      Para melhor entendimento, a frase "Não irei a academia" é quebrada em 5 tokens:</p>
-    <img src="img_tokenizacao.png" alt="Tokenização feita no site da OpenAi" />
+      Para melhor entendimento no próprio site da OpenAI é disponibilizado uma ferramenta para entender
+      como um trecho de texto pode ser tokenizado por um modelo de linguagem, utilizarei como exemplo a
+      frase "Hoje o dia está ensolarado" é dividida em 7 tokens:</p>
+    <img src="img_token.png" alt="Tokenização feita no site da OpenAi" />
     <p class="texto-artigo">
       Esse processo de quebrar o texto em tokens é chamado de Tokenização. </p>
     <p class="texto-artigo"> 
@@ -31,6 +33,11 @@
     <p class="texto-artigo"> 
       Os modelos possuem limites de tokens, no GPT-4 por exemplo o limite é de 8192 tokens, então se você mandar um texto com
       5000 tokens como prompt ele poderá gerar como resposta até 3192 tokens. </p>
+    <p class="texto-artigo">
+      Resumidamente o conjunto de todos os tokens com os quais um modelo pode trabalhar é o seu vocabulário.
+      O tamanho do vocabulário do GPT-4 é 100.256 enquanto do Mixtral 8x7B é 32.000. Isso significa que
+      quando um modelo de vocabulário menor quando vai realizar a tokenização ele tende a dividir mais o texto
+      em partes menores, em comparação com um modelo que possui um vocabulário maior.</p>
     <p class="texto-artigo"> 
       Um ponto em que eu sempre tive dúvida foi porque não usar palavras para separação em vez de tokens, no livro 
       IA Engineer da Chip Huyen ela trás 3 motivos principais: </p>
@@ -42,7 +49,7 @@
       tornando-o mais eficiente. </p>
     <p class="texto-artigo"> 
       3. Tokens também ajudam o modelo a processar palavras desconhecidas. Por exemplo uma palavra inventada como
-      "chatgpting" pode ser divida em "chatgpt" e "ing", ajudando o modelo a entender sua estrutura. 
+      "chatgpting" pode ser divida em "chatgpt" e "ing", ajudando o modelo a entender sua estrutura.
     </article>
 </body>
 </html>
